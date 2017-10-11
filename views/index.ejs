@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MY APP</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+</head>
+<body>
+ <h1>shopping list remainder</h1>
+ <p>Enter your name here</p>
+<div ng-app="">
+  <p>Name: <input type="text" ng-model="name"><div><h2> shopping list for </h2></div></p>
+  <p ng-bind="name"><label>Enter your shopping list for </label></p>
+ 
+</div>
+ 
+  <ul class="quotes">
+  <% for(var i=0; i<EOC.length; i++) {%>
+    <li class="quote">
+      <span><%= EOC[i].enter %></span>
+    </li>
+  <% } %>
+  </ul>
+ 
+<form action="/quotes" method="POST">
+    <input type="text" placeholder="ente1r" name="enter">
+    <input type="text" placeholder="ente1r" name="enter">
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
