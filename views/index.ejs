@@ -10,8 +10,8 @@
  <p>Enter your name here</p>
 <div ng-app="">
   <p>Name: <input type="text" ng-model="name"><div><h2> shopping list for </h2></div></p>
-  <p ng-bind="name"><label>Enter your shopping list for </label></p>
- 
+  <h3 id="inp" ng-bind="name"> </h3>
+
 </div>
  
   <ul class="quotes">
@@ -21,10 +21,10 @@
     </li>
   <% } %>
   </ul>
- 
+ <h3>Enter here to add to your shopping list </h3>
 <form action="/quotes" method="POST">
-    <input type="text" placeholder="ente1r" name="enter">
-    <input type="text" placeholder="ente1r" name="enter">
+    <input type="text" placeholder="Item" name="enter">
+    <input type="text" placeholder="Quantity" name="enter">
     <button type="submit">Submit</button>
   </form>
 </body>
